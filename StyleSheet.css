@@ -1,0 +1,226 @@
+﻿body
+{
+    font-family: Arial, sans-serif;
+    background-color: #CCDBDA;
+    background: #8FCE7F;
+    background: -moz-linear-gradient(top, #8FCE7F 0%, #1C6EA4 41%, #C5B3BB 100%);
+    background: -webkit-linear-gradient(top, #8FCE7F 0%, #1C6EA4 41%, #C5B3BB 100%);
+    background: linear-gradient(to bottom, #8FCE7F 0%, #1C6EA4 41%, #C5B3BB 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.header
+{
+    background-color: Blue;
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Center vertically */
+    gap: 20px; /* Gap between text and image */
+}
+
+.header h2
+{
+    margin: 0; /* Remove default margin */
+}
+
+.img
+{
+    width: 50px; /* Adjust the width of the image */
+    height: 50px; /* Adjust the height of the image */
+    border-radius: 50%; /* Circular border */
+    object-fit: cover; /* Cover the image within the circle */
+}
+.form-container
+{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.form-container h2
+{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group
+{
+    margin-bottom: 15px;
+}
+
+.form-group label
+{
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input[type="text"], .form-group textarea
+{
+    width: 100%;
+    padding: 8px;
+    border: px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="checkbox"]
+{
+    margin-right: 5px;
+}
+
+.button-group
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-group button, .asp-button
+{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button-group button:hover, .asp-button:hover
+{
+    background-color: #0056b3;
+}
+
+.asp-button.reset
+{
+    background-color: #dc3545;
+}
+
+.asp-button.reset:hover
+{
+    background-color: #b02a37;
+}
+
+.asp-button.update
+{
+    background-color: #28a745;
+}
+
+.asp-button.update:hover
+{
+    background-color: #1e7e34;
+}
+
+fieldset
+{
+    border: 2px solid #ddd;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+legend
+{
+    font-size: 1.2em;
+    color: #333;
+}
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+    height: 42px;
+    margin-top: 16px;
+}
+
+table td
+{
+    padding: 8px;
+}
+
+table th
+{
+    padding: 8px;
+    text-align: left;
+}
+
+
+.horizontal-menu
+{
+    display: inline-block; /* Make the menu inline-block to center it */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Remove bullet points */
+    background-color: #007bff; /* Background color for the menu */
+    border-radius: 5px; /* Rounded corners for the menu */
+    overflow: hidden; /* Hide overflow for rounded corners */
+}
+
+.horizontal-menu ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal-menu li
+{
+    position: relative;
+    display: inline-block; /* Make the items inline */
+    margin: 0 10px; /* Add margin to create spacing between items */
+}
+
+.horizontal-menu a
+{
+    display: block; /* Make the links block-level elements */
+    padding: 10px 20px; /* Padding around the text */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Animation for background color */
+}
+
+.horizontal-menu a:hover
+{
+    background-color: #0056b3; /* Background color on hover */
+}
+
+.horizontal-menu li:hover ul
+{
+    display: block; /* Display dropdown on hover */
+}
+
+.horizontal-menu ul ul
+{
+    display: none; /* Hide the dropdown initially */
+    position: absolute; /* Position it absolutely */
+    top: 100%; /* Position it below the parent */
+    left: 0;
+    background-color: #007bff; /* Background color for the dropdown */
+    padding: 0;
+    margin: 0;
+    border-radius: 0 0 5px 5px; /* Rounded corners for the bottom */
+    min-width: 160px; /* Minimum width */
+    z-index: 1000; /* Make sure it appears above other elements */
+}
+
+.horizontal-menu ul ul li
+{
+    width: 100%; /* Full width for dropdown items */
+}
+
+.horizontal-menu ul ul a
+{
+    padding: 10px 20px; /* Padding for dropdown items */
+    transition: background-color 0.3s ease; /* Animation for dropdown items */
+}
+
+.horizontal-menu ul ul a:hover
+{
+    background-color: #0056b3; /* Background color on hover for dropdown */
+}
